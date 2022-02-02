@@ -115,6 +115,8 @@ class CreditsState extends MusicBeatState
 			['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",						'https://twitter.com/evilsk8r',			'53E52C'],
 			['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",						'https://twitter.com/kawaisprite',		'6475F3']
 		];
+
+	        var fg:FlxSprite;
 		
 		for(i in pisspoop){
 			creditsStuff.push(i);
@@ -154,11 +156,14 @@ class CreditsState extends MusicBeatState
 			}
 		}
 
+		fg = new FlxSprite().loadGraphic(Paths.image('menubgs/Credit/CreditFG'));
+		add(fg);
+
 	    descBox = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);
 		descBox.alpha = 0.6;
 		add(descBox);
 
-		descText = new FlxText(50, 600, 1180, "", 32);
+		descText = new FlxText(50, 460, 1180, "", 32);
 		descText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		descText.scrollFactor.set();
 		descText.borderSize = 2.4;
