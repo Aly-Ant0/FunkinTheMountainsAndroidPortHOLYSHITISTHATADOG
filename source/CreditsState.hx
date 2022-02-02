@@ -41,7 +41,7 @@ class CreditsState extends MusicBeatState
 		DiscordClient.changePresence("In the Menus", null);
 		#end
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		bg = new FlxSprite().loadGraphic(Paths.image('menubgs/Credit/CreditBG'));
 		add(bg);
 
 		grpOptions = new FlxTypedGroup<Alphabet>();
@@ -80,9 +80,20 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['Psych Engine Team'],
+			['Mod Port by'],
 			['Aly-Ant',		'alyant',		'Code',						'https://twitter.com/AlyAntlol',	'C0AFFF'],
 			['Roaded64',			'roaded64',		'Stage Code Help',					'https://twitter.com/64_Roaded',		'C30085'],
+			['Galactic Tea'],
+			['Iccy',				'iccy',			'Good Artist/Krys Voice Actor',							'https://twitter.com/yoshubs',			'4494E6'],
+			['Pestana',			'pestana',			'Good Mod Composer',					'https://twitter.com/gedehari',			'FF9300'],
+			['Roaded64',				'roaded64',			'Cool Programmer',	'https://twitter.com/flicky_i',			'C549DB'],
+			['Argilite',		'argilite',	'Cool Animator',							'https://twitter.com/polybiusproxy',	'FFEAA6'],
+			[''],
+			['Additional Help'],
+			['JotinhaGB',		'jotinha',		'Bad Artist Helper/nJK',						'https://twitter.com/Shadow_Mario_',	'444444'],
+			['Sael',			'sael',		'Concept Artist/ni think',					'https://twitter.com/river_oaken',		'C30085'],
+			['Amelia',			'ambe',			'Amby Voice Actor',				'https://twitter.com/bbsub3',			'389A58'],
+			[''],
 			['Psych Engine Android Creator'],
 			['M.A. Jigsaw',		    'majigsaw',		    'Main Coder of The Port',	 'https://www.youtube.com/channel/UC2Sk7vtPzOvbVzdVTWrribQ',	    'F73838'],
 			[''],
