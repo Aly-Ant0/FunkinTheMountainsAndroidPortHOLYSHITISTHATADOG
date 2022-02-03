@@ -47,6 +47,7 @@ class FreeplayState extends MusicBeatState
 	private var iconArray:Array<HealthIcon> = [];
 
 	var bg:FlxSprite;
+	var fg:FlxSprite;
 	var intendedColor:Int;
 	var colorTween:FlxTween;
 
@@ -98,9 +99,14 @@ class FreeplayState extends MusicBeatState
 			}
 		}*/
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+                // FTM Freeplay BG
+		bg = new FlxSprite().loadGraphic(Paths.image('menubgs/Freeplay/FreeplayBackGround'));
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
+
+		fg = new FlxSprite().loadGraphic(Paths.image('menubgs/Freeplay/FreeplayForeGround'));
+		fg.antialiasing = ClientPrefs.globalAntialiasing;
+		add(fg);
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);
@@ -129,8 +135,8 @@ class FreeplayState extends MusicBeatState
 		scoreText = new FlxText(FlxG.width * 0.7, 5, 0, "", 32);
 		scoreText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
 
-		scoreBG = new FlxSprite(scoreText.x - 6, 0).makeGraphic(1, 66, 0xFF000000);
-		scoreBG.alpha = 0.6;
+             // score bg cum
+		scoreBG = new FlxSprite().scoreBG.loadGraphic(Paths.image('menubgs/Freeplay/ScoreBG'));
 		add(scoreBG);
 
 		diffText = new FlxText(scoreText.x, scoreText.y + 36, 0, "", 24);
