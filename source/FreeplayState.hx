@@ -99,6 +99,19 @@ class FreeplayState extends MusicBeatState
 			}
 		}*/
 
+                // FTM Freeplay BG
+		bg = new FlxSprite().loadGraphic(Paths.image('menubgs/Freeplay/FreeplayBackGround'));
+		bg.antialiasing = ClientPrefs.globalAntialiasing;
+		add(bg);
+
+		fg = new FlxSprite().loadGraphic(Paths.image('menubgs/Freeplay/FreeplayForeGround'));
+		fg.antialiasing = ClientPrefs.globalAntialiasing;
+		add(fg);
+
+                // FTM score bg cum
+		scoreBG = new FlxSprite().loadGraphic(Paths.image('menubgs/Freeplay/ScoreBG'));
+		add(scoreBG);
+
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);
 
@@ -123,21 +136,8 @@ class FreeplayState extends MusicBeatState
 		}
 		WeekData.setDirectoryFromWeek();
 
-                // FTM Freeplay BG
-		bg = new FlxSprite().loadGraphic(Paths.image('menubgs/Freeplay/FreeplayBackGround'));
-		bg.antialiasing = ClientPrefs.globalAntialiasing;
-		add(bg);
-
-		fg = new FlxSprite().loadGraphic(Paths.image('menubgs/Freeplay/FreeplayForeGround'));
-		fg.antialiasing = ClientPrefs.globalAntialiasing;
-		add(fg);
-
 		scoreText = new FlxText(FlxG.width * 0.7, 5, 0, "", 32);
 		scoreText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
-
-             // score bg cum
-		scoreBG = new FlxSprite().loadGraphic(Paths.image('menubgs/Freeplay/ScoreBG'));
-		add(scoreBG);
 
 		diffText = new FlxText(scoreText.x, scoreText.y + 36, 0, "", 24);
 		diffText.font = scoreText.font;
