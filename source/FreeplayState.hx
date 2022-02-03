@@ -136,7 +136,7 @@ class FreeplayState extends MusicBeatState
 		scoreText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
 
              // score bg cum
-		scoreBG = new FlxSprite().scoreBG.loadGraphic(Paths.image('menubgs/Freeplay/ScoreBG'));
+		scoreBG = new FlxSprite().loadGraphic(Paths.image('menubgs/Freeplay/ScoreBG'));
 		add(scoreBG);
 
 		diffText = new FlxText(scoreText.x, scoreText.y + 36, 0, "", 24);
