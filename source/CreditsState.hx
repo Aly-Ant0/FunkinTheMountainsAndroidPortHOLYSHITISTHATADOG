@@ -253,7 +253,7 @@ class CreditsState extends MusicBeatState
 		}
 		descText.text = creditsStuff[curSelected][2];
 		descText.screenCenter(Y);
-		descText.y += 460;
+		descText.y += 200;
 
 		descBox.setPosition(descText.x - 10, descText.y - 10);
 		descBox.setGraphicSize(Std.int(descText.width + 20), Std.int(descText.height + 25));
