@@ -82,19 +82,19 @@ class CreditsState extends MusicBeatState
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			['Mod Port by'],
 			['Aly-Ant',		'alyant',		'Code',						'https://twitter.com/AlyAntlol',	'C0AFFF'],
-			['Roaded64',			'roaded64',		'Stage Code Help',					'https://twitter.com/64_Roaded',		'C30085'],
+			['Roaded64',			'roaded64',		'Stage Code Help',					'https://twitter.com/64_Roaded',		'63D5FF'],
 			['Galactic Tea'],
-			['Iccy',				'iccy',			'Good Artist/Krys Voice Actor',							'https://twitter.com/yoshubs',			'4494E6'],
-			['Pestana',			'pestana',			'Good Mod Composer',					'https://twitter.com/gedehari',			'FF9300'],
-			['Roaded64',				'roaded64',			'Cool Programmer',	'https://twitter.com/flicky_i',			'C549DB'],
-			['Argilite',		'argilite',	'Cool Animator',							'https://twitter.com/polybiusproxy',	'FFEAA6'],
+			['Iccy',				'iccy',			'Good Artist/Krys Voice Actor',							'https://twitter.com/Iccy07',			'5BCC2E'],
+			['Pestana',			'pestana',			'Good Mod Composer',					'https://twitter.com/xXPestanaXx',			'FF01C2'],
+			['Roaded64',				'roaded64',			'Cool Programmer',	'https://twitter.com/64_Roaded',			'63D5FF'],
+			['Argilite',		'argilite',	'Nice Animator',							'https://twitter.com/besjfm',	'392C6F'],
 			[''],
 			['Additional Help'],
-			['JotinhaGB',		'jotinha',		'Bad Artist Helper/nJK',						'https://twitter.com/Shadow_Mario_',	'444444'],
-			['Sael',			'sael',		'Concept Artist/ni think',					'https://twitter.com/river_oaken',		'C30085'],
-			['Amelia',			'ambe',			'Amby Voice Actor',				'https://twitter.com/bbsub3',			'389A58'],
+			['JotinhaGB',		'jotinha',		'Bad Art Helper /nJK',						'https://twitter.com/JaidenGalactic',	'2F86D8'],
+			['Sael',			'sael',		'Concept Artist /ni guess',					'https://twitter.com/saeeeeeeeeel',		'FFE062'],
+			['Amelia',			'ambe',			'Amby Voice Actor',				'https://twitter.com/ambebelia',			'FF4D38'],
 			[''],
-			['Psych Engine Android Creator'],
+			['Psych Engine Android'],
 			['M.A. Jigsaw',		    'majigsaw',		    'Main Coder of The Port',	 'https://www.youtube.com/channel/UC2Sk7vtPzOvbVzdVTWrribQ',	    'F73838'],
 			[''],
 			['Psych Engine Team'],
@@ -253,7 +253,7 @@ class CreditsState extends MusicBeatState
 		}
 		descText.text = creditsStuff[curSelected][2];
 		descText.screenCenter(Y);
-		descText.y += 270;
+		descText.y += 460;
 
 		descBox.setPosition(descText.x - 10, descText.y - 10);
 		descBox.setGraphicSize(Std.int(descText.width + 20), Std.int(descText.height + 25));
