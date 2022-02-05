@@ -534,7 +534,7 @@ class WeekEditorState extends MusicBeatState
 		var data:String = Json.stringify(weekFile, "\t");
 		if (data.length > 0)
 		{
-			#if android
+			#if android   
                         openfl.system.System.setClipboard(data.trim());
 			#else
 		        _file = new FileReference();
