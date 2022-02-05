@@ -15,12 +15,11 @@ class FlashingState extends MusicBeatState
 {
 	public static var leftState:Bool = false;
 
+	var warnLogo:FlxSprite;
 	var warnText:FlxText;
 	override function create()
 	{
 		super.create();
-
-	var warnLogo:FlxSprite;
 
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		add(bg);
