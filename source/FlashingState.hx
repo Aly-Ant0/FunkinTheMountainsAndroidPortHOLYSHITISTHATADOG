@@ -20,12 +20,19 @@ class FlashingState extends MusicBeatState
 	{
 		super.create();
 
+	var warnLogo:FlxSprite;
+
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		add(bg);
+
+		warnLogo = new FlxSprite().loadGraphic(Paths.image('logowarn'));
+		warnLogo.screenCenter(Y);
+		add(warnLogo);
 
 		warnText = new FlxText(0, 0, FlxG.width,
 			"Original mod is made by Iccy and Galactic Tea, \n
 			This mod is not made by me ok? \n
+			Press A to Continue. \n
 			Port by Aly-Ant",
 			32);
 		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
