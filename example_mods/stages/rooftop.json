@@ -1,0 +1,9 @@
+{
+	"directory": "rooftop",
+	"defaultZoom": 0.9,
+	"isPixelStage": false,
+
+	"boyfriend": [1040, -15],
+	"girlfriend": [500, 137],
+	"opponent": [100, 100]
+}
