@@ -31,7 +31,7 @@ class FlashingState extends MusicBeatState
 		warnText = new FlxText(0, 0, FlxG.width,
 			"Original mod is made by Iccy and Galactic Tea, \n
 			This mod is not made by me ok? \n
-			Press A to Continue. \n
+			Press A to Continue to the Game. \n
 			Port by Aly-Ant",
 			32);
 		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
