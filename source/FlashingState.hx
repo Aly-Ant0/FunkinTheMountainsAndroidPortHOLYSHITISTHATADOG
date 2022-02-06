@@ -25,7 +25,7 @@ class FlashingState extends MusicBeatState
 		add(bg);
 
 		warnLogo = new FlxSprite().loadGraphic(Paths.image('logowarn'));
-		warnLogo.screenCenter(Y);
+		warnLogo.screenCenter(XY);
 		add(warnLogo);
 
 		warnText = new FlxText(0, 0, FlxG.width,
