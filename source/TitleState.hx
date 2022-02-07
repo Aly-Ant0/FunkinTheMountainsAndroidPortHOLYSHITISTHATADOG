@@ -307,10 +307,10 @@ class TitleState extends MusicBeatState
 		gfDance.frames = FlxAtlasFrames.fromSparrow(BitmapData.fromFile(path),File.getContent(StringTools.replace(path,".png",".xml")));
 		#else
 		
-		gfDance.frames = Paths.getSparrowAtlas('dogTitle');
+		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
 		#end
-			gfDance.animation.addByIndices('danceLeft', 'dogDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-			gfDance.animation.addByIndices('danceRight', 'dogDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+			gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+			gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 	
 		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
 		add(gfDance);
@@ -586,7 +586,7 @@ class TitleState extends MusicBeatState
 				case 3:
 					#if PSYCH_WATERMARKS
 					addMoreText('Iccy', 15);
-					addMoreText('And Galactic Tea', 15);
+					addMoreText('and Galactic Tea', 15);
 					#else
 					addMoreText('present');
 					#end
@@ -629,7 +629,7 @@ class TitleState extends MusicBeatState
 					addMoreText('Funkin');
 				// credTextShit.visible = true;
 				case 14:
-					addMoreText('The');
+					addMoreText('the');
 				// credTextShit.text += '\nNight';
 				case 15:
 					addMoreText('Mountains'); // credTextShit.text += '\nFunkin';
