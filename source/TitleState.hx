@@ -237,7 +237,7 @@ class TitleState extends MusicBeatState
 			// music.play();
 
 			if(FlxG.sound.music == null) {
-				FlxG.sound.playMusic(Paths.music('gettinDog'), 0);
+				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 
 				FlxG.sound.music.fadeIn(4, 0, 0.7);
 			}
@@ -578,15 +578,16 @@ class TitleState extends MusicBeatState
 			{
 				case 1:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Funkin Mountains by'], 15);
+					createCoolText(['Psych Engine by'], 15);
 					#else
 					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
 					#end
 				// credTextShit.visible = true;
 				case 3:
 					#if PSYCH_WATERMARKS
-					addMoreText('Iccy', 15);
-					addMoreText('and Galactic Tea', 15);
+					addMoreText('Shadow Mario', 15);
+					addMoreText('RiverOaken', 15);
+					addMoreText('bb-panzu', 15);
 					#else
 					addMoreText('present');
 					#end
@@ -626,13 +627,13 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 13:
-					addMoreText('Funkin');
+					addMoreText('Friday');
 				// credTextShit.visible = true;
 				case 14:
-					addMoreText('the');
+					addMoreText('Night');
 				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Mountains'); // credTextShit.text += '\nFunkin';
+					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
 
 				case 16:
 					skipIntro();
