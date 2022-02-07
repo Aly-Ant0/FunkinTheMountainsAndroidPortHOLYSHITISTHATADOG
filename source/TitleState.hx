@@ -313,7 +313,6 @@ class TitleState extends MusicBeatState
 			gfDance.animation.addByIndices('danceRight', 'dogDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 	
 		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
-		gfDance.y = 210;
 		add(gfDance);
 		gfDance.shader = swagShader.shader;
 		add(logoBl);
