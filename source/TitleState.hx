@@ -237,7 +237,7 @@ class TitleState extends MusicBeatState
 			// music.play();
 
 			if(FlxG.sound.music == null) {
-				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
+				FlxG.sound.playMusic(Paths.music('gettinDog'), 0);
 
 				FlxG.sound.music.fadeIn(4, 0, 0.7);
 			}
@@ -307,12 +307,14 @@ class TitleState extends MusicBeatState
 		gfDance.frames = FlxAtlasFrames.fromSparrow(BitmapData.fromFile(path),File.getContent(StringTools.replace(path,".png",".xml")));
 		#else
 		
-		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
+                // dogguinho Gettin Freakin on a HOLY SHIT IS A DO-
+		gfDance.frames = Paths.getSparrowAtlas('dogTitle');
 		#end
-			gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-			gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+			gfDance.animation.addByIndices('danceLeft', 'dogDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+			gfDance.animation.addByIndices('danceRight', 'dogDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 	
 		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
+		gfDance.y = 210;
 		add(gfDance);
 		gfDance.shader = swagShader.shader;
 		add(logoBl);
